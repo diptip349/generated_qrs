@@ -1,0 +1,21 @@
+/* Define the basic body style for the page */
+body {
+  font-family: Arial, sans-serif;  /* Set the font family to Arial or a sans-serif fallback */
+  margin: 40px;  /* Add 40px of margin around the body for spacing */
+  background: #f9f9f9;  /* Set a light grey background color */
+  color: #333;  /* Set text color to dark grey for better contrast and readability */
+}
+
+/* Style the form container, adding space below the form */
+form {
+  margin-bottom: 20px;  /* Add 20px margin at the bottom to separate from the elements below */
+}
+
+/* Style for input, select, and button elements */
+input, select, button {
+  display: block;  /* Make these elements block-level (they take up the full width of their container) */
+  margin: 10px 0;  /* Add 10px margin at the top and bottom of each element for spacing */
+  padding: 8px;  /* Add 8px of padding inside each element to increase the clickable area */
+  width: 100%;  /* Make each element stretch to the full width of its container */
+  max-width: 400px;  /* Limit the maximum width to 400px to avoid excessively wide input fields */
+}

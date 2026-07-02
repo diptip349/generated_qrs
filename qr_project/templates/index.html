@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>🎨 Customizable QR Code Generator</h1>
+  <form id="qrForm" enctype="multipart/form-data">
+    <input type="text" name="data" placeholder="Text or URL" required>
+    
+    <label>Fill Color:</label>
+    <input type="color" name="fill_color" value="#000000">
+    
+    <label>Background Color:</label>
+    <input type="color" name="back_color" value="#ffffff">
+    
+    <label>Shape:</label>
+    <select name="shape" required>
+      <option value="square">Square</option>
+      <option value="circle">Circle</option>
+      <option value="rounded">Rounded</option>
+      <option value="triangle">Triangle</option>
+      <option value="diamond">Diamond</option>
+    </select>
+    
+    <label>Logo:</label>
+    <input type="file" name="logo" accept="image/*">
+    
+    <button type="submit">Generate</button>
+  </form>
+
+  <div id="result">
+    <h2>QR Code:</h2>
+    <img id="qrImage" style="max-width: 100%; border: 1px solid #ccc; display: none;">
+    <div id="loadingMessage" style="display: none;">Generating QR code...</div>
+    
+    <!-- Dropdown for selecting file format -->
+    <label for="fileFormat">Select File Format:</label>
+    <select id="fileFormat">
+      <option value="png">PNG</option>
+      <option value="jpg">JPG</option>
+    </select>
+    
+    <!-- Download button -->
+    <button id="downloadBtn" style="display: none;">Download QR Code</button>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
